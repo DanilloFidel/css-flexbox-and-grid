@@ -1,0 +1,51 @@
+.flex-container{
+    width: 500px;
+    /* height: 500px; */
+    background-color: #9AC321;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container p{
+    text-align: center;
+}
+
+svg{
+    color: white;
+}
+
+.flex-container div {
+    height: 80px;
+    align-items: center;
+    justify-content:  center;
+    display: flex;
+    border: 2px solid white;
+    margin: 3px;
+    background-image: url(img01.svg);
+}
+
+.flex-item1{
+    flex-grow: 1
+}
+
+.flex-item2{
+}
+
+.flex-item3{
+   
+}
+
+.flex-item4{
+    flex-grow: 4;
+}
+
+.flex-item5{
+    flex-grow: 6;
+}
+
+
+
+
+
+
