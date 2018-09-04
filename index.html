@@ -10,26 +10,73 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>flex-grow</h1>
-    <div class="flex-container">
-        <div class="flex-item1">
-            <i class="fas fa-laptop fa-2x"></i>
-        </div>
-        <!---
-        <div class="flex-item2">
-            <i class="fas fa-gamepad fa-2x"></i>
-        </div>
-        <div class="flex-item3">
-            <i class="fas fa-dice fa-2x"></i>
-        </div>
-    -->
-        <div class="flex-item4">
-            <i class="fas fa-mobile-alt fa-2x"></i>
-        </div>
-        <div class="flex-item5">
-            <i class="fas fa-headphones-alt fa-2x"></i>
-        </div>
-    </div>
-    <h3 style="margin-left: 5%">flex-grow: 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|  flex-grow: 4     |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flex-grow: 6</h3>
-</body>
-</html>
+    
+    <h1>flex-basis: 0 // flex-grow: 3</h1>
+    <br>
+    <section class="container">
+        <div class="item basis-auto"><i class="fas fa-laptop fa-2x"></i></div>
+        <div class="item basis-auto"><i class="fas fa-mobile-alt fa-2x"></i></div>
+        <div class="item basis-auto-grow-2 o"><i class="fas fa-headphones-alt fa-2x"></i></div>
+        <div class="item basis-auto-width o"><i class="fas fa-headphones-alt fa-2x"></i></div>
+        <div class="item basis-auto-grow-0 o"><i class="fas fa-wifi fa-2x"></i></div>
+    </section>
+
+    <!---
+    
+    <section class="container overlay">
+        <div class="item basis-auto"><i class="fas fa-laptop fa-2x"></i></div>
+        <div class="item basis-auto"><i class="fas fa-mobile-alt fa-2x"></i></div>
+        <div class="item basis-auto-grow-2"><i class="fas fa-headphones-alt fa-2x"></i></div>
+        <div class="item basis-auto-width"><i class="fas fa-headphones-alt fa-2x"></i></div>
+        <div class="item basis-auto-grow-0"><i class="fas fa-wifi fa-2x"></i></div>
+    </section>
+    
+    <h1>flex-basis: 0;</h1>
+    <section class="container">
+        <div class="item basis-0"><i class="fas fa-laptop fa-2x"></i>
+            <i class="fas fa-gamepad fa-2x"></i></div>
+            <div class="item basis-0"><i class="fas fa-mobile-alt fa-2x"></i></div>
+            <div class="item basis-0-grow-2"><i class="fas fa-laptop fa-2x"></i></div>
+            <div class="item basis-0-width"><i class="fas fa-headphones-alt fa-2x"></i></div>
+            <div class="item basis-0-grow-0"><i class="fas fa-wifi fa-2x"></i></div>
+        </section>
+        
+        <section class="container overlay">
+            <div class="item basis-0"><i class="fas fa-laptop fa-2x"></i>
+                <i class="fas fa-gamepad fa-2x"></i></div>
+                <div class="item basis-0"><i class="fas fa-mobile-alt fa-2x"></i></div>
+                <div class="item basis-0-grow-2"><i class="fas fa-laptop fa-2x"></i></div>
+                <div class="item basis-0-width"><i class="fas fa-headphones-alt fa-2x"></i></div>
+                <div class="item basis-0-grow-0"><i class="fas fa-wifi fa-2x"></i></div>
+            </section>
+            
+            <h1>flex-basis: número;</h1>
+            <section class="container basis-numero-container">
+                <div class="item basis-110">1</div>
+                <div class="item basis-110">12</div>
+                <div class="item basis-110">12345678910</div>
+                <div class="item basis-300">1234</div>
+                <div class="item basis-110-porcento">1</div>
+                <div class="item basis-110-porcento">12</div>
+                <div class="item basis-110-porcento">123</div>
+                <div class="item basis-110-porcento">1234</div>
+            </section>
+            
+            <h1>flex-basis: número; // Diferente Conteúdo</h1>
+            <section class="container basis-numero-container">
+                <div class="item basis-110">Conteúdo Grande</div>
+                <div class="item basis-110">PalavraMaior</div>
+                <div class="item basis-110">Oi</div>
+            </section>
+            
+            <h1>flex-basis: número; // grow 1</h1>
+            <section class="container basis-numero-container">
+                <div class="item basis-110-grow-1">1</div>
+                <div class="item basis-110-grow-1">12</div>
+                <div class="item basis-110-grow-1">1234</div>
+                <div class="item basis-110-grow-1">12345</div>
+                <div class="item basis-600-grow-1">5</div>
+            </section>
+        -->
+        </body>
+        </html>
